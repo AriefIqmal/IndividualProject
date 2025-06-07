@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Unit Converter</title>
+    <script src="unit.js"></script>
+    <link rel="stylesheet" href="Tool.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo"><a href="index.html">MyTools</a></div>
+        <div class="nav-links">
+            <a href="personalinfo.html">About me</a>
+        </div>
+    </nav>
+
+    <div class="container">
+    <h1>UNIT CONVERTER</h1>
+        <input type="number" id="number" placeholder="Enter your number" required><br>
+        
+        <label for="original">Original unit</label>
+            <select id="original" >
+            <option value="cm">cm</option>
+            <option value="m">m</option>
+            <option value="km">km</option>
+            </select><br>
+
+        <label for="convert">Convert unit</label>
+            <select id="convert">
+            <option value="cm">cm</option>
+            <option value="m">m</option>
+            <option value="km">km</option>
+            </select><br>
+
+        <button onclick="converter()">CONVERT</button><br>
+        <p id="result"></p>
+        </div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Various Calculators</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+            color: #00796b;
+            font-size: 2.5rem;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #009879;
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        .styleTable {
+            margin: 40px auto;
+            width: 80%;
+            max-width: 600px;
+            border-collapse: collapse;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+
+        .styleTable th {
+            background-color: #009879;
+            color: white;
+            text-align: left;
+            padding: 14px 18px;
+            font-size: 1.1rem;
+        }
+
+        .styleTable td {
+            padding: 14px 18px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .styleTable tr:hover {
+            background-color: #e0f7f5;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: #00796b;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #009879;
+        padding: 10px 20px;
+        color: white;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">MyTools</div>
+        <div class="nav-links">
+            <a href="personalinfo.html">About me</a>
+        </div>
+    </nav>
+    <h1>Various Calculators</h1>
+    <hr>
+    
+    <table class="styleTable">
+        <tr>
+            <th>Icon</th>
+            <th>Tool</th>
+        </tr>
+        <tr onclick="window.location='Calculator.html'">
+            <td>🧮</td>
+            <td><a href="Calculator.html">Simple Calculator</a></td>
+        </tr>
+        <tr onclick="window.location='BMIchecker.html'">
+            <td>🏋️</td>
+            <td><a href="BMIchecker.html">BMI Checker</a></td>
+        </tr>
+        <tr onclick="window.location='IncomeTaxCalculator.html'">
+            <td>🪙</td>
+            <td><a href="IncomeTaxCalculator.html">Income Tax Calculator</a></td>
+        </tr>
+        <tr onclick="window.location='UnitConverter.html'">
+            <td>📏</td>
+            <td><a href="UnitConverter.html">Unit Converter</a></td>
+        </tr>
+    </table>
+</body>
+</html>
